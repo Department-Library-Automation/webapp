@@ -1,0 +1,23 @@
+[
+    {
+        "icon": "bx bxs-book-add",
+        "content": "You recently added books"
+        
+    },
+    {
+        "icon": "bx bx-error",
+        "content": "10 members are overdue"
+    },
+    {
+        "icon": "bx bx-user-plus",
+        "content": "100 Users have been Successfully added"
+    },
+    {
+        "icon": "bx bx-news",
+        "content": "Journals have been updated"
+    },
+    {
+        "icon": "bx bxs-user",
+        "content": "user1243 has updated profile"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    
+    {
+        "icon": "bx bx-log-in bx-flip-vertical",
+        "count": "2,001",
+        "title": "Daily visits"
+    },
+    {
+        "icon": "bx bxs-book",
+        "count": "1,995",
+        "title": "Pending Returns"
+    },
+    {
+        "icon": "bx bx-rupee",
+        "count": "2,632",
+        "title": "Total Penalty"
+    },
+    {
+        "icon": "bx bxs-book-alt",
+        "count": "1,711",
+        "title": "Total Books"
+    }
+]
