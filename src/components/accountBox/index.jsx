@@ -4,10 +4,21 @@ import { LoginForm } from "./loginForm";
 import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
+import back from '../../assets/images/back.jpg.crdownload';
+
+const Div = styled.div`
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(${back});
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+  `
 
 const BoxContainer = styled.div`
+  margin-top: 10em;
+  margin-left: 95em;
   width: 280px;
-  min-height: 550px;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   border-radius: 19px;
@@ -125,6 +136,7 @@ export function AccountBox(props) {
   const contextValue = { switchToSignup, switchToSignin };
 
   return (
+    <Div>
     <AccountContext.Provider value={contextValue}>
       <BoxContainer>
         <TopContainer>
@@ -155,5 +167,6 @@ export function AccountBox(props) {
         </InnerContainer>
       </BoxContainer>
     </AccountContext.Provider>
+    </Div>
   );
 }

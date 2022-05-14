@@ -1,19 +1,10 @@
 import React, {useEffect} from 'react'
-
 import './layout/layout.css'
-
-import Sidebar from './sidebar/Sidebar'
-import TopNav from './topnav/TopNav'
-// import Routes from './Routes'
-// import MainPage from '../MainPage'
-
 import { useSelector, useDispatch } from 'react-redux'
-
-// import ThemeAction from '../../redux/actions/ThemeAction'
 import ThemeAction from '../redux/actions/ThemeAction'
-
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
+import Home from './home'
 import Dashboard from '../pages/Dashboard'
 import Circulation from '../pages/Circulation'
 import Map from '../pages/Map'
@@ -52,7 +43,8 @@ const Routing = () => {
     return (
         <Router>
             <Routes>
-                <Route exact path='/' element={<MainPage/>}/>
+                <Route  path='/' element={<Home/>}/>
+                <Route exact path='/main' element={<MainPage/>}/>
                 <Route  path='/dashboard' element={<Dashboard/>}/>
                 <Route  path='/circulation' element={<Circulation/>}/>
                 <Route  path='/map' element={<Map/>}/>
