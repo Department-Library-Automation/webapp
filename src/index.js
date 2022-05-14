@@ -17,7 +17,7 @@ import Layout from './components/layout/Layout'
 // import LoginForm from './components/accountBox/loginForm'
 import { LoginForm } from './components/accountBox/loginForm';
 import MainPage from './MainPage';
-import Routes from './components/Routes';
+import Routing from './components/Routing';
 
 const store = createStore(
   rootReducer
@@ -28,7 +28,7 @@ document.title = 'Dept_Library_Automation'
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <Routes />
+      <Routing />
     {/* <MainPage /> */}
 
       {/* <div>hi</div> */}

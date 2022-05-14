@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext,useState } from "react";
 import {
   BoldLink,
   BoxContainer,
@@ -9,25 +9,57 @@ import {
 } from "./common";
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
+import { useNavigate } from 'react-router-dom';
+import Axios from 'axios';
 
-export function LoginForm(props) {
+
+
+export function LoginForm() {
   const { switchToSignup } = useContext(AccountContext);
-  const loginUserDashboard = (e) => {
-    e.preventDefault()
-    // alert("hi")
-    window.location.href = '/dashboard'
-  }
+  
+
+    const navigate = useNavigate()
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [formError, setFormError] = useState("")
+
+    const login = e => {
+        e.preventDefault()
+        console.log('SignIn Form')
+        if(email == '' || password == ''){
+            setFormError("Please fill every field")
+            return
+        }
+        else{
+            Axios.post("http://localhost:3001/Login",{
+                email: email,
+                password: password
+            }).then((response) => {
+              console.log(response.data)
+                if(!response.data.error) {
+                  console.log(response.data)
+                  navigate('/dashboard')
+                }
+
+                if (response.data.error) {
+                    console.log('error', response.data.error)
+                }
+                setFormError(response.data.error)
+            })
+        }
+    }
 
 
   return (
     <BoxContainer>
-      <FormContainer onSubmit={loginUserDashboard}>
-        <Input type="email" placeholder="Email" />
-        <Input type="password" placeholder="Password" />
+      <FormContainer >
+      <p style= {{color: 'red'}}>{formError ? formError : ''}</p>
+        <Input type="email" placeholder="Email" onChange={(e) => { setEmail(e.target.value)}} />
+        <Input type="password" placeholder="Password" onChange={(e) => { setPassword(e.target.value)}} />
         <hr></hr>
         
         <br />
-        <SubmitButton type="submit">Signin</SubmitButton>
+        <SubmitButton type="submit" onClick={login}>Signin</SubmitButton>
       </FormContainer>
       <Marginer direction="vertical" margin={10} />
       <MutedLink href="#">Forget your password?</MutedLink>
@@ -42,7 +74,7 @@ export function LoginForm(props) {
     </BoxContainer>
   );
 
-  // return (
-  //   <h1>huj</h1>
-  // );
+  
 }
+
+export default LoginForm

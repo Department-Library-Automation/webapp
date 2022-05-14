@@ -4,10 +4,10 @@ import './layout.css'
 
 import Sidebar from '../sidebar/Sidebar'
 import TopNav from '../topnav/TopNav'
-import Routes from '../Routes'
+import Routing from '../Routing'
 // import MainPage from '../MainPage'
 
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import { useSelector, useDispatch } from 'react-redux'
 
@@ -30,7 +30,7 @@ const Layout = () => {
     }, [dispatch])
 
     return (
-        <BrowserRouter>
+        <Router>
             {/* <Route path='/' exact component={MainPage}/> */}
             <Route render={(props) => (
                 <div className={`layout ${themeReducer.mode} ${themeReducer.color}`}>
@@ -38,12 +38,12 @@ const Layout = () => {
                     <div className="layout__content">
                         <TopNav/>
                         <div className="layout__content-main">
-                            <Routes/>
+                            <Routing />
                         </div>
                     </div>
                 </div>
             )}/>
-        </BrowserRouter>
+        </Router>
     )
 }
 
