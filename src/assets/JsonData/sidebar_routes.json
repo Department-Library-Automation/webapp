@@ -6,37 +6,42 @@
     },
     {
         "display_name": "Circulation",
-        "route": "/customers",
+        "route": "/circulation",
         "icon": "bx bx-recycle bx-spin"
     },
     {
-        "display_name": "Web-Opac",
-        "route": "/products",
-        "icon": "bx bx-book-reader bx-tada"
-    },
-    {
-        "display_name": "Libray Management",
-        "route": "/orders",
-        "icon": "bx bx-library bx-tada"
-    },
-    {
-        "display_name": "Membership",
-        "route": "/analytics",
-        "icon": "bx bxs-user-badge bx-fade-right bx-flip-horizontal"
+        "display_name": "Map",
+        "route": "/map",
+        "icon": "bx bxs-map bx-burst"
     },
     {
         "display_name": "Magazines/Journals",
-        "route": "/categories",
+        "route": "/magazine",
         "icon": "bx bx-book-open bx-fade-up"
     },
     {
         "display_name": "student/Faculty",
-        "route": "/discount",
+        "route": "/student",
         "icon": "bx bx-receipt bx-burst"
+    },
+    {
+        "display_name": "Web-Opac",
+        "route": "/webopac",
+        "icon": "bx bx-book-reader bx-tada"
+    },
+    {
+        "display_name": "Libray Management",
+        "route": "/library",
+        "icon": "bx bx-library bx-tada"
+    },
+    {
+        "display_name": "Membership",
+        "route": "/membership",
+        "icon": "bx bxs-user-badge bx-fade-right bx-flip-horizontal"
     },
 
     {
-        "display_name": "settings",
+        "display_name": "Settings",
         "route": "/settings",
         "icon": "bx bx-cog"
     }

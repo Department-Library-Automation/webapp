@@ -131,35 +131,35 @@ const latestOrders = {
             id: "19610",
             user: "Damian Nithish",
             date: "25 Dec 2021",
-            price: "AC435JRK",
+            price: "9780786838653",
             status: "overdue"
         },
         {
             id: "19613",
             user: "Deenadayalan",
             date: "1 Mar 2022",
-            price: "VF746WCT",
+            price: "9780786290741",
             status: "returned"
         },
         {
             id: "19616",
             user: "Gankes",
             date: "22 Apr 2022",
-            price: "PZR014GCY",
+            price: "9780786435786",
             status: "pending"
         },
         {
             id: "19622",
             user: "Jaganathan",
             date: "5 Feb 2022",
-            price: "QMZ379VHU",
+            price: "9780786095689",
             status: "returned"
         },
         {
             id: "19635",
             user: "Murali",
             date: "22 Jun 2022",
-            price: "NHT642CGY",
+            price: "9780786187492",
             status: "pending"
         }
     ]
