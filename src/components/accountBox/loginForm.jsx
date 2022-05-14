@@ -31,13 +31,13 @@ export function LoginForm() {
             return
         }
         else{
-            Axios.post("http://localhost:3001/Login",{
+            Axios.post("http://localhost:3001/Signin",{
                 email: email,
                 password: password
             }).then((response) => {
               console.log(response.data)
-                if(!response.data.error) {
-                  console.log(response.data)
+                if(!response.data.error) { 
+                  console.log(response.data) 
                   navigate('/dashboard')
                 }
 

@@ -6,6 +6,8 @@ const middleware = require('./utils/middleware')
 const logger = require('./utils/logger')
 
 const signupRouter = require('./routes/signup')
+const signinRouter = require('./routes/signin')
+
 
 const app = express()
 
@@ -28,6 +30,6 @@ app.get('/', (request, response) => {
 })
 
 app.use('/SignUp', signupRouter)
-
+app.use('/Signin', signinRouter)
 
 module.exports = app
