@@ -22,6 +22,7 @@ import Logout from '../pages/Logout'
 import About from '../pages/about'
 import Faq from '../pages/faq'
 import Contact from '../pages/contact'
+import Pay from '../pages/Pay'
 
 
 const Routing = () => {
@@ -62,6 +63,7 @@ const Routing = () => {
                 <Route  path='/about' element={<About/>}/>
                 <Route  path='/contact' element={<Contact/>}/>
                 <Route  path='/faq' element={<Faq/>}/>
+                <Route  path='/pay' element={<Pay/>}/>
 
 
             </Routes>
