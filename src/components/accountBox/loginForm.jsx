@@ -62,10 +62,10 @@ export function LoginForm() {
         <SubmitButton type="submit" onClick={login}>Signin</SubmitButton>
       </FormContainer>
       <Marginer direction="vertical" margin={10} />
-      <MutedLink href="#">Forget your password?</MutedLink>
+      <MutedLink href="#" style={{color:'black'}}>Forget your password?</MutedLink>
       <Marginer direction="vertical" margin="1.6em" />
       <Marginer direction="vertical" margin="1em" />
-      <MutedLink href="#">
+      <MutedLink href="#" style={{color:'black'}}>
         Don't have an accoun?{" "}
         <BoldLink href="#" onClick={switchToSignup}>
           Signup

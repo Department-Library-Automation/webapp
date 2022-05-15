@@ -17,8 +17,8 @@ const Div = styled.div`
 const BoxContainer = styled.div`
   margin-top: 10em;
   margin-left: 95em;
-  width: 280px;
-  height: 60vh;
+  width: 300px;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   border-radius: 19px;
