@@ -70,11 +70,11 @@ const LogHome = () => {
                 <SocialMediaWrap>
                     <WebsiteRights> BiblioTheca © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                     <SocialIcons>
-                        <SocialIconLink href="/" target="_blank" aria-label="Facebook"><FaFacebook /></SocialIconLink>
-                        <SocialIconLink href="/" target="_blank" aria-label="Instagram"><FaInstagram /></SocialIconLink>
-                        <SocialIconLink href="/" target="_blank" aria-label="Youtube"><FaYoutube /></SocialIconLink>
-                        <SocialIconLink href="/" target="_blank" aria-label="Twitter"><FaTwitter /></SocialIconLink>
-                        <SocialIconLink href="/" target="_blank" aria-label="LinkedIn"><FaLinkedin /></SocialIconLink>
+                        <SocialIconLink href="http://www.facebook.com" target="_blank" aria-label="Facebook"><FaFacebook /></SocialIconLink>
+                        <SocialIconLink href="http://www.instagram.com" target="_blank" aria-label="Instagram"><FaInstagram /></SocialIconLink>
+                        <SocialIconLink href="http://www.youtube.com" target="_blank" aria-label="Youtube"><FaYoutube /></SocialIconLink>
+                        <SocialIconLink href="http://www.twitter.com" target="_blank" aria-label="Twitter"><FaTwitter /></SocialIconLink>
+                        <SocialIconLink href="http://www.linkedin.com" target="_blank" aria-label="LinkedIn"><FaLinkedin /></SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>
             </SocialMedia>
