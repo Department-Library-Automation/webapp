@@ -220,7 +220,7 @@ const Dashboard = (props) => {
         let month = dayVal.getMonth()
         let year = dayVal.getFullYear()
 
-        alert(`${date}-${month}-${year}`)
+        alert(`${date}-${month}-${year} Stock has to be verified`)
     }
     
     
@@ -315,7 +315,7 @@ const Dashboard = (props) => {
                             />
                         </div>
                         <div className="card__footer">
-                            <Link to='/circulation'>view all</Link>
+                            <Link to='/details1'>view mine</Link>
                         </div>
                     </div>
                     <div className='card ' style={mystyle70} >

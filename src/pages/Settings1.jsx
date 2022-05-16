@@ -75,12 +75,12 @@ const Settings1 = (props) => {
                                     <div className="row">
                                         <div className='col-6'>
                                             
-                                        <a href='/faq' target="_self">
+                                        <a href='/faq1' target="_self">
                                             <div className='card'>
                                                 <h1>FAQ</h1>
                                             </div>
                                             </a>  
-                                            <a href='/about' target="_self">
+                                            <a href='/about1' target="_self">
                                             <div className='card'>
                                                 <h1>About Us</h1>
 
@@ -88,7 +88,7 @@ const Settings1 = (props) => {
                                             </a>  
                                         </div>
                                         <div className="col-6">
-                                            <a href='/contact' target="_self">
+                                            <a href='/contact1' target="_self">
                                             <div className='card'>
                                                 <h1>Contact Us</h1>
                                             </div>
