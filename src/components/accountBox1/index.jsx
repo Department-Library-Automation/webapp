@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { AccountContext } from "./accountContext";
 import { SignupForm } from "./signupForm";
 import back from '../../assets/images/back.jpg.crdownload';
+import  AnimatedShapes  from '../animation/AnimatedShapes';
+
 
 const Div = styled.div`
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(${back});
@@ -16,7 +18,7 @@ const Div = styled.div`
 
 const BoxContainer = styled.div`
   margin-top: 10em;
-  margin-left: 55em;
+  margin-left: 90em;
   width: 300px;
   height: 65vh;
   display: flex;
@@ -137,6 +139,7 @@ export function AccountBox1(props) {
 
   return (
     <Div>
+    <AnimatedShapes/>
     <AccountContext.Provider value={contextValue}>
       <BoxContainer>
         <TopContainer>

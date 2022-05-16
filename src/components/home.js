@@ -8,6 +8,8 @@ import styled from 'styled-components'
 import student from '../assets/images/students.png'
 import faculty from '../assets/images/facultys.png'
 import back from '../assets/images/back.jpg.crdownload'
+import  AnimatedShapes  from './animation/AnimatedShapes';
+
 
 const Div = styled.div`
     background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(${back});
@@ -54,6 +56,8 @@ const LogHome = () => {
   return (
 
     <Div>
+            
+        <AnimatedShapes/>
 
         <div style={{width:'50%' ,margin: '8em'}}>
             <button onClick={ () => navigate('/main')} style={{background:'none',border:'none',cursor:'pointer'}}>
@@ -65,7 +69,8 @@ const LogHome = () => {
                 <img src={faculty} alt=''/>
             </button>
         </div>
-        
+
+
             <SocialMedia>
                 <SocialMediaWrap>
                     <WebsiteRights> BiblioTheca © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
@@ -80,7 +85,6 @@ const LogHome = () => {
             </SocialMedia>
             
            
-            
     </Div>
   )
 }

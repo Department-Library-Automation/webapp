@@ -12,6 +12,7 @@ import {
 import { Marginer } from "../marginer";
 import { AccountContext } from "./accountContext";
 
+
 export function SignupForm(props) {
   const { switchToSignin } = useContext(AccountContext);
 
@@ -55,7 +56,9 @@ export function SignupForm(props) {
 }
 
   return (
+    
     <BoxContainer>
+
       <FormContainer>
         <p style= {{color: 'red'}}>{formError ? formError : ''}</p>
         <Input id="name" type="text" placeholder="Full Name" onChange={(e) => { setFullName(e.target.value)}} required />

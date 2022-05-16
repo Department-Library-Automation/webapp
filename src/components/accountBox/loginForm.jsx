@@ -14,6 +14,7 @@ import Axios from 'axios';
 
 
 
+
 export function LoginForm() {
   const { switchToSignup } = useContext(AccountContext);
   
@@ -52,6 +53,7 @@ export function LoginForm() {
 
   return (
     <BoxContainer>
+
       <FormContainer >
       <p style= {{color: 'red'}}>{formError ? formError : ''}</p>
         <Input id="Email" type="email" placeholder="Email" onChange={(e) => { setEmail(e.target.value)}} />
