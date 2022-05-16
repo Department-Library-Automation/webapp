@@ -13,7 +13,7 @@ export const Circle = styled.div`
 
   @keyframes circle {
       to{
-          transform: translate(100vw, -15vh);
+          transform: translate(200vw, -15vh);
       }
   }
 `;
@@ -32,7 +32,7 @@ export const Circle1 = styled.div`
 
   @keyframes circle {
       to{
-          transform: translate(100vw, -50vh);
+          transform: translate(150vw, -50vh);
       }
   }
 
@@ -52,7 +52,7 @@ export const Circle2 = styled.div`
 
   @keyframes circle {
       to{
-          transform: translate(110vw, -70vh);
+          transform: translate(110vw, -80vh);
       }
   }
 `;
