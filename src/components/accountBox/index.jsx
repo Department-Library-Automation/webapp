@@ -87,6 +87,9 @@ const InnerContainer = styled.div`
   padding: 0 1.8em;
 `;
 
+
+
+
 const backdropVariants = {
   expanded: {
     width: "233%",
@@ -167,6 +170,7 @@ export function AccountBox(props) {
         </InnerContainer>
       </BoxContainer>
     </AccountContext.Provider>
+   
     </Div>
   );
 }
