@@ -8,14 +8,14 @@ import Dropdown from '../dropdown/Dropdown'
 
 import ThemeMenu from '../thememenu/ThemeMenu'
 
-import notifications from '../../assets/JsonData/notification.json'
+import notifications from '../../assets/JsonData/notification1.json'
 
 import user_image from '../../assets/images/admin.png'
 
-import user_menu from '../../assets/JsonData/user_menus.json'
+import user_menu from '../../assets/JsonData/user_menus1.json'
 
 const curr_user = {
-    display_name: 'Admin',
+    display_name: 'Daya',
     image: user_image
 }
 
@@ -46,7 +46,7 @@ const renderUserMenu =(item, index) => (
     </Link>
 )
 
-const Topnav = () => {
+const Topnav1 = () => {
     return (
         <div className='topnav'>
             <div className="topnav__search">
@@ -64,7 +64,7 @@ const Topnav = () => {
                 <div className="topnav__right-item">
                     <Dropdown
                         icon='bx bx-bell'
-                        badge='5'
+                        badge='3'
                         contentData={notifications}
                         renderItems={(item, index) => renderNotificationItem(item, index)}
                     />
@@ -78,4 +78,4 @@ const Topnav = () => {
     )
 }
 
-export default Topnav
+export default Topnav1

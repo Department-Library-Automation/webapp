@@ -251,7 +251,8 @@ const Pay = (props) => {
 
                 <br></br>
                 <br></br>
-
+              <h3><center><input type="checkbox" name="agree" value="agree" checked/>I hereby agree to all the terms and conditions applied</center> 
+</h3> 
                 
                 <div style={mystyle2}>
                 <br></br>
@@ -263,7 +264,7 @@ const Pay = (props) => {
                 billingAddress
                 
                 />
-                <ToastContainer draggable={true} transition={Zoom} autoClose={8000}/>
+                
                 </div>
             </div>     
         </div>

@@ -17,7 +17,7 @@ function bound(value, floor, ceil) {
     return Math.min(ceil, Math.max(value, floor));
 }
 
-const EditableUserProfile = (props) => {
+const EditableUserProfile1 = (props) => {
 
     const stored = props.stored
     const editCompleteCallback = props.editCompleteCallback
@@ -123,4 +123,4 @@ const EditableUserProfile = (props) => {
     </>
 }
 
-export default EditableUserProfile
+export default EditableUserProfile1

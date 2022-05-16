@@ -28,8 +28,8 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import ThemeAction from '../redux/actions/ThemeAction'
 
-import Sidebar from '../components/sidebar/Sidebar1'
-import TopNav from '../components/topnav/TopNav1'
+import Sidebar1 from '../components/sidebar/Sidebar1'
+import TopNav1 from '../components/topnav/TopNav1'
 
 import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar'
@@ -40,7 +40,7 @@ import { textAlign } from '@mui/system';
 
 import Group from './Group'
 
-const About = (props) => {
+const About1 = (props) => {
     const [calValue, calOnChange] = useState(new Date());
     class SimpleMap extends React.Component {
         static defaultProps = {
@@ -90,9 +90,9 @@ const About = (props) => {
     
     return (
         <div className={`layout ${themeReducer.mode} ${themeReducer.color}`}>
-                    <Sidebar {...props} />
+                    <Sidebar1 {...props} />
                     <div className="layout__content">
-                        <TopNav/>
+                        <TopNav1/>
                         <div className="layout__content-main">
                             <div>
                                 <h2 className="page-header">About</h2>
@@ -124,4 +124,4 @@ const About = (props) => {
         </div>
     )
 }
-export default About
+export default About1

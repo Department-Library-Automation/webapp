@@ -26,8 +26,8 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import ThemeAction from '../redux/actions/ThemeAction'
 
-import Sidebar from '../components/sidebar/Sidebar'
-import TopNav from '../components/topnav/TopNav'
+import Sidebar1 from '../components/sidebar/Sidebar1'
+import TopNav1 from '../components/topnav/TopNav1'
 
 import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar'
@@ -278,7 +278,7 @@ const renderOrderBody = (item, index) => (
     </tr>
 )
 
-const Circulation = (props) => {
+const Circulation1 = (props) => {
     const [calValue, calOnChange] = useState(new Date());
     class SimpleMap extends React.Component {
         static defaultProps = {
@@ -304,9 +304,9 @@ const Circulation = (props) => {
 
     return (
         <div className={`layout ${themeReducer.mode} ${themeReducer.color}`}>
-                    <Sidebar {...props} />
+                    <Sidebar1 {...props} />
                     <div className="layout__content">
-                        <TopNav/>
+                        <TopNav1/>
                         <div className="layout__content-main">
                             <div>
                                 <h2 className="page-header">Circulation</h2>
@@ -336,4 +336,4 @@ const Circulation = (props) => {
     )
 }
 
-export default Circulation
+export default Circulation1

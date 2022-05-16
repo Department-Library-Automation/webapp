@@ -38,7 +38,7 @@ export function LoginForm() {
               console.log(response.data)
                 if(!response.data.error) { 
                   console.log(response.data) 
-                  navigate('/dashboard')
+                  navigate('/dashboard1')
                 }
 
                 if (response.data.error) {

@@ -26,8 +26,8 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import ThemeAction from '../redux/actions/ThemeAction'
 
-import Sidebar from '../components/sidebar/Sidebar'
-import TopNav from '../components/topnav/TopNav'
+import Sidebar1 from '../components/sidebar/Sidebar1'
+import TopNav1 from '../components/topnav/TopNav1'
 
 import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar'
@@ -45,7 +45,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import CloseIcon from "@material-ui/icons/Close";
 import "./searchtitle.css"
 
-const Webopac = (props) => {
+const Webopac1 = (props) => {
     const [calValue, calOnChange] = useState(new Date());
     class SimpleMap extends React.Component {
         static defaultProps = {
@@ -194,9 +194,9 @@ const Webopac = (props) => {
 
     return (
         <div className={`layout ${themeReducer.mode} ${themeReducer.color}`}>
-                    <Sidebar {...props} />
+                    <Sidebar1 {...props} />
                     <div className="layout__content">
-                        <TopNav/>
+                        <TopNav1/>
                         <div className="layout__content-main">
                             <div>
                                 <h2 className="page-header">Webopac</h2>
@@ -263,4 +263,4 @@ const Webopac = (props) => {
     )
 }
 
-export default Webopac
+export default Webopac1

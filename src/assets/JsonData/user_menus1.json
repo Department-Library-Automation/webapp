@@ -2,17 +2,17 @@
     {
         "icon": "bx bx-user",
         "content": "Profile",
-        "route": "/profile"
+        "route": "/profile1"
     },
     {
         "icon": "bx bx-wallet-alt",
         "content": "My Wallet",
-        "route": "/wallet"
+        "route": "/wallet1"
     },
     {
         "icon": "bx bx-cog",
         "content": "Settings",
-        "route": "/settings"
+        "route": "/Settings1"
         
     },
     {

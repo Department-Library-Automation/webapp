@@ -1,0 +1,43 @@
+[
+    {
+        "display_name": "dashboard",
+        "route": "/dashboard",
+        "icon": "bx bx-category-alt"
+    },
+    {
+        "display_name": "details",
+        "route": "/details1",
+        "icon": "bx bx-recycle bx-spin"
+    },
+    {
+        "display_name": "map",
+        "route": "/map1",
+        "icon": "bx bxs-map bx-burst"
+    },
+    {
+        "display_name": "magazines/journals",
+        "route": "/magazine1",
+        "icon": "bx bx-book-open bx-fade-up"
+    },
+    {
+        "display_name": "student/faculty",
+        "route": "/student1",
+        "icon": "bx bx-receipt bx-burst"
+    },
+    {
+        "display_name": "web-opac",
+        "route": "/webopac1",
+        "icon": "bx bx-book-reader bx-tada"
+    },
+    {
+        "display_name": "membership",
+        "route": "/membership1",
+        "icon": "bx bxs-user-badge bx-fade-right bx-flip-horizontal"
+    },
+
+    {
+        "display_name": "settings",
+        "route": "/settings1",
+        "icon": "bx bx-cog"
+    }
+]

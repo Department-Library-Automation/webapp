@@ -61,7 +61,7 @@ const LogHome = () => {
             </button>
         </div>
         <div style={{width:'50%' ,margin: '8em'}}>
-            <button onClick={ () => navigate('/main')}  style={{background:'none',border:'none',cursor:'pointer'}}>
+            <button onClick={ () => navigate('/main1')}  style={{background:'none',border:'none',cursor:'pointer'}}>
                 <img src={faculty} alt=''/>
             </button>
         </div>

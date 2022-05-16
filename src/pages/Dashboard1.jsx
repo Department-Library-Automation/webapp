@@ -26,8 +26,8 @@ import { useSelector, useDispatch } from 'react-redux'
 
 import ThemeAction from '../redux/actions/ThemeAction'
 
-import Sidebar1 from '../components/sidebar/Sidebar1'
-import TopNav1 from '../components/topnav/TopNav1'
+import Sidebar from '../components/sidebar/Sidebar'
+import TopNav from '../components/topnav/TopNav'
 
 import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar'
@@ -212,7 +212,7 @@ const renderOrderBody = (item, index) => (
     </tr>
 )
 
-const Dashboard = (props) => {
+const Dashboard1 = (props) => {
     const [calValue, calOnChange] = useState(new Date());
     const onClickDay = (dayVal) => {
         let day = dayVal.getDay()
@@ -242,9 +242,9 @@ const Dashboard = (props) => {
 
     return (
         <div className={`layout ${themeReducer.mode} ${themeReducer.color}`}>
-                    <Sidebar1 {...props} />
+                    <Sidebar {...props} />
                     <div className="layout__content">
-                        <TopNav1/>
+                        <TopNav/>
                         <div className="layout__content-main">
         <div>
             <h2 className="page-header">Dashboard</h2>
@@ -342,7 +342,7 @@ const Dashboard = (props) => {
                         Special Event (9AM to 8PM) 
                         </h2><br></br>
                         <h2>
-                            (The Special events include all holidays and festivals) 
+                            (The Special events include all holidays and festi) 
                         </h2>
                         
                         
@@ -406,4 +406,4 @@ const Dashboard = (props) => {
     )
 }
 
-export default Dashboard
+export default Dashboard1
