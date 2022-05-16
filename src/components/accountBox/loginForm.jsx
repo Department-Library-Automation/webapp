@@ -72,6 +72,8 @@ export function LoginForm() {
         </BoldLink>
       </MutedLink>
     </BoxContainer>
+
+    
   );
 
   
