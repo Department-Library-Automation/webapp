@@ -39,7 +39,11 @@ import TextField from "@mui/material/TextField";
 import List from "../components/List"
 import "../pages/Searchstyle.css";
 
-import JSONDATA  from "./mock_data.json";
+import data  from "../assets/JsonData/mock_data.json";
+import { fontSize } from '@mui/system';
+import SearchIcon from "@material-ui/icons/Search";
+import CloseIcon from "@material-ui/icons/Close";
+import "./searchtitle.css"
 
 const Webopac = (props) => {
     const [calValue, calOnChange] = useState(new Date());
@@ -163,17 +167,30 @@ const Webopac = (props) => {
         </tr>
     )
 
-    const [searchTerm, setSearchTerm] = useState("");
+    
 
-    const searchlist={
-        marginTop: "20px",
-        width: "350px",
-        height: '',
-		textAlign: 'center',
-		padding: '20px',
-        display: 'flex',
-        justifyContent: 'space-between'
+    const clearInput = () => {
+        setFilteredData([]);
+        setWordEntered("");
     };
+
+    const [filteredData, setFilteredData] = useState([]);
+    const [wordEntered, setWordEntered] = useState("");
+
+    const handleFilter = (event) => {
+    const searchWord = event.target.value;
+    setWordEntered(searchWord);
+    const newFilter = data.filter((value) => {
+        return value.title.toLowerCase().includes(searchWord.toLowerCase());
+    });
+
+    if (searchWord === "") {
+        setFilteredData([]);
+    } else {
+        setFilteredData(newFilter);
+    }
+    };
+    
 
     return (
         <div className={`layout ${themeReducer.mode} ${themeReducer.color}`}>
@@ -186,10 +203,32 @@ const Webopac = (props) => {
                                 
                                 <div className="main">
                                     <div className="search">
-                                        <input type="text" placeholder='search...' />
-                                        {JSONDATA.map((val,key) => {
-                                            return <div>{val.book_name}</div>;
-                                        })}
+                                        <div className="searchInputs">
+                                            <input
+                                            type="text"
+                                            placeholder="Search..."
+                                            value={wordEntered}
+                                            onChange={handleFilter}
+                                            />
+                                            <div className="searchIcon">
+                                            {filteredData.length === 0 ? (
+                                                <SearchIcon />
+                                            ) : (
+                                                <CloseIcon id="clearBtn" onClick={clearInput} />
+                                            )}
+                                            </div>
+                                        </div>
+                                        {filteredData.length != 0 && (
+                                            <div className="dataResult">
+                                            {filteredData.slice(0, 15).map((value, key) => {
+                                                return (
+                                                <a className="dataItem" href={value.website} target="_blank">
+                                                    <p>{value.title} </p>
+                                                </a>
+                                                );
+                                            })}
+                                            </div>
+                                        )}
                                     </div>
                                     
 

@@ -40,8 +40,21 @@ import first from '../../src/pages/images/FirstFloor.jpg'
 import second from '../../src/pages/images/SecondFloor.jpg'
 import third from '../../src/pages/images/ThirdFloor.jpg'
 
+const mystyle69 = {
+    marginLeft:"10%",
+    marginRight:"10%",
+    width:"200%"
+   };
 
-
+const mystyle1 = {
+    marginLeft:"0%"
+   };
+   const mystyle2 = {
+    marginLeft:"25%"
+   };
+   const mystyle3 = {
+    marginLeft:"25%"
+   };
 
 const Map = (props) => {
     const [calValue, calOnChange] = useState(new Date());
@@ -73,13 +86,76 @@ const Map = (props) => {
                     <div className="layout__content">
                         <TopNav/>
                         <div className="layout__content-main">
-                            <div>
+                            <div className='card'>
                                 <h2 className="page-header">Map</h2>
                                 <div className='row'>
-                                    <div className='card' style={{margin: "auto"}}>
+                                    <div className='card' style={mystyle69} >
                                         <h1>Section Block</h1>
                                         <br></br>
-                                    <img style={{height: "500px", width: "800px"}} src={section} alt="Not available" />
+                                        <br></br>
+                                        <div className='card'>
+                                            <h1>Books</h1><br></br>
+                                    <div className='row' style={{margin: "auto"}} >
+                                        <div className='col-1' style={mystyle1}>
+                                            <h3>FirstFloor</h3>
+                                            
+                                        </div>
+                                        <div className='col-1' style={mystyle2}  >
+                                            <h3>SecondFloor</h3>
+                                        </div>
+                                        <div className='col-1' style={mystyle3}>
+                                            <h3>ThirdFloor</h3>
+                                        </div>
+                                        </div>
+                                        <br></br>
+                                        <hr></hr>
+                                        <br></br>
+                                        <div className='row' style={{margin: "auto"}} >
+                                        <div className='col-1' style={mystyle1}>
+                                            <h4>FFL1_1_Fantasy</h4>
+                                            <h4>FFL1_2_Fantasy</h4>
+                                            <h4>FFL2_1_Proverb_Story</h4>
+                                            <h4>FFL2_2_Proverb_Story</h4>
+                                            <h4>FFL3_1_Picture_Book</h4>
+                                            <h4>FFL3_2_Picture_Book</h4>
+                                            <h4>FFR1_1_Fairy_Tales</h4>
+                                            <h4>FFR1_2_Fairy_Tales</h4>
+                                            <h4>FFR2_1_Fact_Story</h4>
+                                            <h4>FFR2_2_Fact_Story</h4>
+                                            <h4>FFR3_1_Poetry</h4>
+                                            <h4>FFR3_2_Poetry</h4>
+                                            
+                                        </div>
+                                        <div className='col-1' style={mystyle2}  >
+                                            <h4>SFL1_1_Mystery</h4>
+                                            <h4>SFL1_2_Mystery</h4>
+                                            <h4>SFL2_1_Encyclopedia</h4>
+                                            <h4>SFL2_2_Encyclopedia</h4>
+                                            <h4>SFL3_1_Anime_Manga</h4>
+                                            <h4>SFL3_2_Anime_Manga</h4>
+                                            <h4>SFR1_1_Crime_Investigation</h4>
+                                            <h4>SFR1_2_Crime_Investigation</h4>
+                                            <h4>SFR2_1_Novel</h4>
+                                            <h4>SFR2_2_Novel</h4>
+                                            <h4>SFR3_1_Horror</h4>
+                                            <h4>SFR3_2_Horror</h4>
+                                        </div>
+                                        <div className='col-1' style={mystyle3}>
+                                            <h4>TFL1_1_Autobiography</h4>
+                                            <h4>TFL1_2_Autobiography</h4>
+                                            <h4>TFL2_1_Poetry</h4>
+                                            <h4>TFL2_2_Poetry</h4>
+                                            <h4>TFL3_1_Science_Fiction</h4>
+                                            <h4>TFL3_2_Science_Fiction</h4>
+                                            <h4>TFR1_1_Autobiography</h4>
+                                            <h4>TFR1_2_Autobiography</h4>
+                                            <h4>TFR2_1_Science_Fiction</h4>
+                                            <h4>TFR2_2_Science_Fiction</h4>
+                                            <h4>TFR3_1_Novel</h4>
+                                            <h4>TFR3_2_Novel</h4>
+                                        </div>
+                                        </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <br></br>

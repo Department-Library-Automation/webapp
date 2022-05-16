@@ -82,9 +82,29 @@ const Faq = (props) => {
                             <div>
                                 <h2 className="page-header">Faq</h2>
                                 <div className="card">
-                                    
+                                    <h2 style={{color: "Aquamarine"}} >Where can I find all list of books?</h2><br></br>
+                                    <h3>You can find in the Map option. In section block all section of books have been listed.
+                                        The catagories of books have been listed in the floor and shelf wise. The shelf has been named
+                                        as XXZA_B_Catagory. The XX indicated floor, Z indicates Left or Right, A indicates Row and B indicates 
+                                        Front or Back followed by catagories of books arranged.
+                                    </h3>
+                                    <h2 style={{color: "Aquamarine"}} ></h2>
+                                </div>
+                                <div className="card">
+                                    <h2 style={{color: "Aquamarine"}} >What are the working times for Library in Working Days?</h2><br></br>
+                                    <h3>The working days of Library is from Monday to Friday. In working days, it will be open from 8 AM to 10 PM.
+                                    </h3>
+                                    <h2 style={{color: "Aquamarine"}} ></h2>
+                                </div>
+                                <div className="card">
+                                    <h2 style={{color: "Aquamarine"}} >What are the working times for Library in Leave(Speacial Events) Days?</h2><br></br>
+                                    <h3>The weekends of Library are Saturday and Sunday. In weekends, it will be open from 7AM to 7PM. 
+                                        In special events like festival it will be open from 9 Am to 8PM.
+                                    </h3>
+                                    <h2 style={{color: "Aquamarine"}} ></h2>
                                 </div>
                             </div>
+
                         </div>
                     </div>
         </div>

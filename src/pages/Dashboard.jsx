@@ -31,7 +31,7 @@ import TopNav from '../components/topnav/TopNav'
 
 import 'react-calendar/dist/Calendar.css';
 import Calendar from 'react-calendar'
-
+import Clock from 'react-live-clock';
 
 
 const chartOptions = {
@@ -64,6 +64,23 @@ const chartOptions = {
         }
     }
 }
+
+const mystyle68 = {
+    height:"10%"
+   };
+
+const mystyle69 = {
+    marginLeft:"5%",
+    width:"90%"
+   };
+   const mystyle70 = {
+    marginLeft:"8%",
+    width:"40%"
+   };
+   const mystyle71 = {
+    marginLeft:"7%",
+    width:"40%"
+   };
 
 const slideImages = [
     'images/circ4.jpg',
@@ -164,6 +181,13 @@ const latestOrders = {
         }
     ]
 }
+const lilist ={
+    position: 'relative',
+    display: 'inline-block',
+    width: '200px',
+    height: '100px'
+};
+
 
 const orderStatus = {
     "shipping": "primary",
@@ -198,6 +222,8 @@ const Dashboard = (props) => {
 
         alert(`${date}-${month}-${year}`)
     }
+    
+    
 
     // const themeReducer = useSelector(state => state.ThemeReducer.mode)
     const themeReducer = useSelector(state => state.ThemeReducer)
@@ -276,11 +302,11 @@ const Dashboard = (props) => {
                 </div>
                 
                 <div className="row" >
-                    <div className="card">
+                    <div className="card" style={mystyle69}>
                         <div className="card__header">
                             <h3>latest orders</h3>
                         </div>
-                        <div className="card__body">
+                        <div className="card__body" >
                             <Table
                                 headData={latestOrders.header}
                                 renderHead={(item, index) => renderOrderHead(item, index)}
@@ -292,14 +318,79 @@ const Dashboard = (props) => {
                             <Link to='/'>view all</Link>
                         </div>
                     </div>
-                    <div className='card full-height'>
+                    <div className='card ' style={mystyle70} >
                         <h3><center>Calender</center></h3>
                         <br></br>
                         <br></br>
-                    <Calendar onChange={calOnChange} value={calValue} onClickDay={onClickDay} />
+                    <center><Calendar onChange={calOnChange} value={calValue} onClickDay={onClickDay} /></center>
+                    </div>
+                    <div className='card' style={mystyle71}>
+                        <div style={{marginLeft:"7%",height:"10%"}}>
+                            <h2 >Working Hours </h2>
+                             <h3><center><i class='bx bx-time-five' ></i>
+                    <Clock format={'HH:mm:ss'} ticking={true} timezone={'Ind'} /></center></h3>
+                       
+                    </div>
+                    <br></br>
+                    <br></br>
+                    <hr></hr>
+                    <br></br>
+                    <div>
+                        <li>Mon - Fri (8AM to 10PM) </li>
+                        <li>Sat & Sun (7AM to 7PM) </li>
+                        <li>Special Event (9AM to 8PM) </li>
+                        
+                    </div>
                     </div>
                     
                 </div>
+                <br></br>
+                <br></br>
+                <br></br>
+                                        <div className='row'>
+                                            
+                                            <div className='col-6'>
+                                                <hr></hr>
+                                                <h2 style={{marginRight:"60%"}}>Contact Details:<br></br><br></br></h2>
+                                                <p>Registrar’s Office : +91-422-2685111<br></br>
+                                                Campus Director’s Office : +91-422-2685010<br></br>
+                                                Corporate and Industry Relations  :  +91-422-2685005, +91-422-2685004<br></br>
+                                                Human Resource Director's office : +91-422-2685031</p><br></br><hr></hr><br></br>
+                                                <p><h3>Amrita School of Engineering :</h3><br></br>
+                                                Dean’s Office : +91-422-2685502<br></br>
+                                                Dy. Dean’s Office : +91-422-2685503<br></br>
+                                                Administrative Office : +91-422-2685509<br></br>
+                                                Accounts Office : +91-422-2685072<br></br>
+                                                Dy. Controller’s Office : +91-422-2685064<br></br>
+                                                Professor of Students Welfare : +91-422-2685050</p><br></br><hr></hr><br></br>
+                                                <p><h3>Amrita School of Business :</h3><br></br>
+                                                    Chairperson Office : +91-422-2685401<br></br>
+                                                    Administrative Office : +91-422-2685402<br></br>
+                                                    Admission Office : +91-422-8685407, +91-422-8685410 <br></br>
+                                                    Dy. Controller’s Office : +91-422-2685439<br></br>
+                                                    Post Graduate Programs and Ph.D Office : +91-422-2685403<br></br></p>
+                                            </div>
+                                            <div className='col-6'>
+                                                <hr></hr>
+                                                <p><br></br><br></br><h3>Address:</h3>Amrita Vishwa Vidyapeetham,<br></br><br></br>
+                                                    Coimbatore Campus,<br></br>
+                                                    Amritanagar PO, Coimbatore 641112<br></br>
+                                                    Tel  : +91-422-2685000</p>
+                                                    
+                                            </div>
+                                            
+                                                <br></br>
+                                                <br></br>
+                                                <h1><li style={lilist}><a href="http://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle' ></i></a></li>
+                                                <li style={lilist}><a href="http://www.twitter.com" target="_blank"><i class='bx bxl-twitter' ></i></a></li>
+                                                <li style={lilist}><a href="http://www.instagram.com" target="_blank"><i class='bx bxl-instagram' ></i></a></li>
+                                                <li style={lilist}><a href="http://www.linkedin.com" target="_blank"><i class='bx bxl-linkedin' ></i></a></li></h1>
+                                                
+                                                <p>Address: Amrita Vishwa Vidyapeetham,Coimbatore Campus,Amritanagar PO, Coimbatore 641112, Tel  : +91-422-2685000</p>
+                                                
+                                            
+                                            
+                                        </div>
             </div>
         </div>
 

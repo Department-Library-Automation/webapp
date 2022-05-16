@@ -1,0 +1,92 @@
+[
+    {
+        "isbn":"9780786838653",
+        "title":"Percy Jackson 1 The Lightning Thief",
+        "author":"Rick Riordan",
+        "published":"2018-12-04T00:00:00.000Z",
+        "publisher":"No Starch Press",
+        "pages":390,
+        "website":"../files/Percy Jackson 1 The Lightning Thief.pdf"
+    },
+    {
+        "isbn":"9780786290741",
+        "title":"Percy Jackson 2 The Sea Of Monsters",
+        "author":"Rick Riordan",
+        "published":"2017-07-16T00:00:00.000Z",
+        "publisher":"O'Reilly Media",
+        "pages":131,
+        "website":"../files/Percy Jackson 2 The Sea Of Monsters.pdf"
+    },
+    {
+        "isbn":"9780786435786",
+        "title":"Percy Jackson 3 The Titans Curse",
+        "author":"Rick Riordan",
+        "published":"2016-09-03T00:00:00.000Z",
+        "publisher":"No Starch Press",
+        "pages":207,
+        "website":"../files/Percy Jackson 3 The Titans Curse.pdf"
+    },
+    {
+        "isbn":"9780786095689",
+        "title":"Percy Jackson 4 The Battle Of The Labyrinth",
+        "author":"Rick Riordan",
+        "published":"2014-04-08T00:00:00.000Z",
+        "publisher":"O'Reilly Media",
+        "pages":243,
+        "website":"../files/Percy Jackson 4 The Battle Of The Labyrinth.pdf"
+    },
+    {
+        "isbn":"9780786187492",
+        "title":"Percy Jackson 5 The Last Olympian",
+        "author":"Rick Riordan",
+        "published":"2012-08-30T00:00:00.000Z",
+        "publisher":"O'Reilly Media",
+        "pages":200,
+        "website":"../files/Percy Jackson 5 The Last Olympian.pdf"
+    },
+    {
+        "isbn":"9780816705528",
+        "title":"Percy Jackson Heroes Of Olympus The House Of Hades",
+        "author":"Rick Riordan",
+        "published":"2020-01-28T00:00:00.000Z",
+        "publisher":"Independently published",
+        "pages":354,
+        "website":"../files/Percy Jackson Heroes Of Olympus The House Of Hades.pdf"
+    },
+    {
+        "isbn":"9780816095532",
+        "title":"Percy Jackson The Heroes Of Olympus Blood Of Olympus",
+        "author":"Rick Riordan",
+        "published":"2014-11-18T00:00:00.000Z",
+        "publisher":"Apress; 2nd edition",
+        "pages":344,
+        "website":"../files/Percy Jackson The Heroes Of Olympus Blood Of Olympus.pdf"
+    },
+    {
+        "isbn":"9780816619045",
+        "title":"The Heroes Of Olympus 1 The Lost Hero",
+        "author":"Rick Riordan",
+        "published":"2019-05-11T00:00:00.000Z",
+        "publisher":"Apress",
+        "pages":586,
+        "website":"../files/The Heroes Of Olympus 1 The Lost Hero.pdf"
+    },
+    {
+        "isbn":"9780816187645",
+        "title":"The Heroes Of Olympus 2 The Son Of Neptune",
+        "author":"Rick Riordan",
+        "published":"2019-05-11T00:00:00.000Z",
+        "publisher":"Apress",
+        "pages":164,
+        "website":"../files/The Heroes Of Olympus 2 The Son Of Neptune.pdf"
+    },
+    {
+        "isbn":"9780816092577",
+        "title":"The Heroes Of Olympus 3 The Mark Of Athena",
+        "author":"Rick Riordan",
+        "published":"2019-05-11T00:00:00.000Z",
+        "publisher":"Apress",
+        "pages":498,
+        "website":"../files/The Heroes Of Olympus 3 The Mark Of Athena.pdf"
+    }
+]
